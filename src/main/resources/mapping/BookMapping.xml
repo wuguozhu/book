@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.anan.mapper.BookMapper">
+
+    <resultMap id="BaseResultMap" type="com.anan.entity.Book">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="number" jdbcType="INTEGER" property="number" />
+        <result column="price" jdbcType="INTEGER" property="price" />
+        <result column="printshop" jdbcType="VARCHAR" property="printshop" />
+    </resultMap>
+
+    <select id="getBookById" resultType="com.anan.entity.Book">
+        select * from book where id = #{id}
+    </select>
+
+</mapper>
+
+

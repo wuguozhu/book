@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    username: root
+    password: Hantele123!
+    url:  jdbc:mysql://192.168.6.219:3306/mydb
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.anan.entity
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
