@@ -16,7 +16,7 @@ public class BookController {
     private BookServiceImpl bookService;
 
     @RequestMapping(value = "/getBookById/{id}")
-    public String getBookById(@PathVariable int id) {
+    public String getBookById(@PathVariable Integer id) {
         return bookService.getBookById(id).toString();
 
     }
