@@ -1,6 +1,7 @@
 package com.anan.entity;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 @Data
 public class Book {
@@ -8,6 +9,7 @@ public class Book {
     /**
      * 图书ID.
      */
+    @Id
     private Integer id;
 
     /**

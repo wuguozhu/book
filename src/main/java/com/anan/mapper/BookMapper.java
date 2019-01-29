@@ -9,11 +9,22 @@ import java.util.List;
 @Repository
 public interface BookMapper {
 
+
+    /**
+     * get book by id.
+     * @param id
+     * @return book
+     */
     Book getBookById(Integer id);
 
+    /**
+     * sava book to database
+     * @param book
+     * @return
+     */
     int saveBook(Book book);
 
-    void deleteBookById(List<Integer> ids);
+    int deleteBookById(Integer id);
 
-    void updateBook(Book book);
+    int updateBook(Book book);
 }

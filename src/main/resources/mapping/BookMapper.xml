@@ -29,6 +29,25 @@
         );
     </insert>
 
+    <delete id="deleteBookById" parameterType="Book">
+      delete from book WHERE id = #{id}
+    </delete>
+
+    <update id="updateBook" parameterType="Book">
+        UPDATE book
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            number=#{number},
+            price=#{price},
+            printshop=#{printshop}
+        </set>
+        <where>
+            id = #{id};
+        </where>
+    </update>
+
 
 </mapper>
 
