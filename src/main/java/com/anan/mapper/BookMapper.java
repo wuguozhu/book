@@ -18,13 +18,23 @@ public interface BookMapper {
     Book getBookById(Integer id);
 
     /**
-     * sava book to database
+     * save book to database
      * @param book
-     * @return
+     * @return executor successful result values.
      */
     int saveBook(Book book);
 
+    /**
+     * delete book by id.
+     * @param id
+     * @return executor successful result values.
+     */
     int deleteBookById(Integer id);
 
+    /**
+     * update book
+     * @param book
+     * @return executor successful result values.
+     */
     int updateBook(Book book);
 }

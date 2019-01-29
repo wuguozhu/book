@@ -19,6 +19,11 @@ public class BookMapperTest {
     @Autowired
     private BookMapper bookMapper;
 
+
+    /**
+     * test get book.
+     * @throws Exception
+     */
     @Test
     public void getBookById() throws Exception {
 
@@ -27,6 +32,10 @@ public class BookMapperTest {
 
     }
 
+    /**
+     * test save book.
+     * @throws Exception
+     */
     @Test
     public void saveBook() throws Exception {
         Book book = new Book();
@@ -41,6 +50,11 @@ public class BookMapperTest {
         Assert.assertEquals("返回错误",1,i);
     }
 
+
+    /**
+     * test delete book.
+     * @throws Exception
+     */
     @Test
     public void deleteBookById() throws Exception {
         int result = bookMapper.deleteBookById(4);
@@ -48,6 +62,11 @@ public class BookMapperTest {
         assertEquals("正确返回",1,result);
     }
 
+
+    /**
+     * test update book.
+     * @throws Exception
+     */
     @Test
     public void updateBook() throws Exception {
         Book book = new Book();
