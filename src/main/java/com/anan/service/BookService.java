@@ -11,7 +11,7 @@ import com.anan.entity.Book;
 /**
  * <b><code>service</code></b>
  * <p/>
- * Description
+ *  book service interface
  * <p/>
  * <b>Creation Time:</b> 2018/12/26 0:52.
  *
@@ -21,5 +21,5 @@ import com.anan.entity.Book;
 
 public interface BookService {
 
-    public Book getBookById(int id);
+    public Book getBookById(Integer id);
 }

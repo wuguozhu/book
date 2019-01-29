@@ -1,69 +1,34 @@
 package com.anan.entity;
 
+import lombok.Data;
 
+@Data
 public class Book {
 
-
+    /**
+     * 图书ID.
+     */
     private Integer id;
 
-
+    /**
+     * 图书名字.
+     */
     private String name;
 
+    /**
+     * 图书数量
+     */
+    private Integer number;
 
-    private Integer numeber;
-
+    /**
+     * 图书价格.
+     */
     private Integer price;
 
+    /**
+     * 出版社.
+     */
     private String printshop;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getNumeber() {
-        return numeber;
-    }
-
-    public void setNumeber(Integer numeber) {
-        this.numeber = numeber;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public String getPrintshop() {
-        return printshop;
-    }
-
-    public void setPrintshop(String printshop) {
-        this.printshop = printshop;
-    }
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", numeber=" + numeber +
-                ", price=" + price +
-                ", printshop='" + printshop + '\'' +
-                '}';
-    }
 }

@@ -13,11 +13,26 @@
         select * from book where id = #{id}
     </select>
 
+    <insert id="saveBook" parameterType="Book">
+        INSERT INTO book(
+        id,
+        name,
+        number,
+        price,
+        printshop
+        )VALUES (
+        #{id},
+        #{name},
+        #{number},
+        #{price},
+        #{printshop}
+        );
+    </insert>
+
+
 </mapper>
 
 
-<!--
 
--->
 
 
