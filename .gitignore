@@ -15,7 +15,7 @@
 *.iws
 *.iml
 *.ipr
-
+.git.bak
 ### NetBeans ###
 /nbproject/private/
 /build/

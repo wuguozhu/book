@@ -11,7 +11,7 @@ import com.anan.entity.Book;
 /**
  * <b><code>service</code></b>
  * <p/>
- *  book service interface
+ * book service interface
  * <p/>
  * <b>Creation Time:</b> 2018/12/26 0:52.
  *
@@ -21,5 +21,37 @@ import com.anan.entity.Book;
 
 public interface BookService {
 
-    public Book getBookById(Integer id);
+
+    /**
+     * get book by id.
+     *
+     * @param id
+     * @return book
+     */
+    Book getBookById(Integer id);
+
+    /**
+     * save book to database
+     *
+     * @param book
+     * @return execute check code.
+     */
+    Integer saveBook(Book book);
+
+    /**
+     * delete book by id.
+     *
+     * @param id
+     * @return execute check code.
+     */
+    Integer deleteBookById(Integer id);
+
+    /**
+     * update book
+     *
+     * @param book
+     * @return execute check code.
+     */
+    Integer updateBook(Book book);
+
 }

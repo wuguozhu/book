@@ -27,7 +27,7 @@ public class BookMapperTest {
     @Test
     public void getBookById() throws Exception {
 
-        Book book = bookMapper.getBookById(1);
+        Book book = bookMapper.getBookById(11);
         System.out.println(book.toString());
 
     }
