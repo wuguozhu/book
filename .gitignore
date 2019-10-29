@@ -16,6 +16,9 @@
 *.iml
 *.ipr
 .git.bak
+book.eml
+book.userlibraries
+
 ### NetBeans ###
 /nbproject/private/
 /build/
